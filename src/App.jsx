@@ -21,7 +21,7 @@ function App() {
   const year = time.getFullYear();
   const month = String(time.getMonth() + 1).padStart(2, '0');
   const day = String(time.getDate()).padStart(2, '0');
-  const weekday = ['日', '月', '火', '水', '木', '金', '土'][time.getDay()];
+  const weekday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][time.getDay()];
 
   return (
     <div className="app-container">
@@ -53,7 +53,7 @@ function App() {
           <span className="date-text">
             {year}.{month}.{day}
           </span>
-          <span className="weekday-text">{weekday}曜日</span>
+          <span className="weekday-text">{weekday}</span>
         </div>
 
         {/* Decorative Elements */}

@@ -135,6 +135,8 @@
     0 0 100px rgba(0, 255, 245, 0.2);
   display: inline-block;
   position: relative;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
 }
 
 .time-separator {
