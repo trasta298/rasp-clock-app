@@ -12,9 +12,12 @@
 
 ## デザイン
 
-- フォント: **Orbitron** (未来的でユニーク) + **JetBrains Mono** (テクニカル)
-- カラー: ネオンシアン、パープル、ピンクのグラデーション
-- アニメーション: 背景の浮遊エフェクト、グリッドパターン、秒のパルス効果
+- **フォント**:
+  - 時計数字: **Space Mono** (モノスペース、レトロ未来的なサイバーパンク風)
+  - 日付表示: **JetBrains Mono** (テクニカルでクリーン)
+  - 数字の幅が固定されチラつきなし
+- **カラー**: ネオンシアン、ネオンパープル、ネオンピンクのグラデーション
+- **アニメーション**: 背景の浮遊エフェクト、グリッドパターン、秒のパルス効果
 
 ## セットアップ
 
@@ -271,7 +274,7 @@ colors: {
 - Vite
 - React
 - Tailwind CSS
-- Google Fonts (Orbitron, JetBrains Mono)
+- Google Fonts (Space Mono, JetBrains Mono)
 - Docker / Docker Compose
 - Nginx (Alpine)
 
