@@ -103,7 +103,7 @@ npm run preview
 docker compose up -d
 
 # Chromium kioskモードで開く
-chromium-browser --kiosk --app=http://localhost:3000
+chromium --kiosk --app=http://localhost:3000
 ```
 
 ### 方法2: コマンドラインから起動（開発用）
@@ -113,7 +113,7 @@ chromium-browser --kiosk --app=http://localhost:3000
 npm run dev
 
 # Chromium kioskモードで開く
-chromium-browser --kiosk --app=http://localhost:5173
+chromium --kiosk --app=http://localhost:5173
 ```
 
 ### 方法3: 本番ビルドを使用
@@ -126,7 +126,7 @@ npm run build
 npm run preview
 
 # Chromium kioskモードで開く
-chromium-browser --kiosk --app=http://localhost:4173
+chromium --kiosk --app=http://localhost:4173
 ```
 
 ### 方法5: 自動起動設定（ラズパイ起動時に自動実行）
@@ -180,7 +180,7 @@ nano ~/.config/autostart/clock.desktop
 [Desktop Entry]
 Type=Application
 Name=RaspberryPi Clock
-Exec=chromium-browser --kiosk --app=http://localhost:3000
+Exec=chromium --kiosk --app=http://localhost:3000
 X-GNOME-Autostart-enabled=true
 ```
 
@@ -199,7 +199,7 @@ nano ~/.config/autostart/clock.desktop
 [Desktop Entry]
 Type=Application
 Name=RaspberryPi Clock
-Exec=chromium-browser --kiosk --app=file:///home/pi/rasp-clock-app/dist/index.html
+Exec=chromium --kiosk --app=file:///home/pi/rasp-clock-app/dist/index.html
 X-GNOME-Autostart-enabled=true
 ```
 
@@ -225,13 +225,13 @@ sudo cp -r dist/* /var/www/html/
 3. Chromium kioskモードで起動:
 
 ```bash
-chromium-browser --kiosk --app=http://localhost
+chromium --kiosk --app=http://localhost
 ```
 
 ## Kioskモードのオプション
 
 ```bash
-chromium-browser \
+chromium \
   --kiosk \
   --app=http://localhost:4173 \
   --noerrdialogs \
