@@ -49,7 +49,7 @@ docker compose ps
 
 ```bash
 # 開発モードで起動
-docker compose -f docker-compose.dev.yml up
+docker compose -f compose.dev.yaml up
 
 # ブラウザで確認
 # http://localhost:5173
@@ -57,7 +57,7 @@ docker compose -f docker-compose.dev.yml up
 
 #### カスタマイズファイルの永続化
 
-`docker-compose.yml` のボリュームマウントを有効にすることで、カスタマイズしたファイルを永続化できます：
+`compose.yaml` のボリュームマウントを有効にすることで、カスタマイズしたファイルを永続化できます：
 
 ```yaml
 volumes:
@@ -279,7 +279,7 @@ colors: {
 
 ### ポート番号の変更
 
-`docker-compose.yml` のポート設定を変更:
+`compose.yaml` のポート設定を変更:
 
 ```yaml
 ports:
@@ -329,7 +329,7 @@ docker compose up -d
 # ポート3000を使用しているプロセスを確認
 sudo lsof -i :3000
 
-# または docker-compose.yml のポート番号を変更
+# または compose.yaml のポート番号を変更
 ```
 
 ### ローカル環境
