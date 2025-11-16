@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'orbitron': ['Orbitron', 'sans-serif'],
+        'space-mono': ['Space Mono', 'monospace'],
         'jetbrains': ['JetBrains Mono', 'monospace'],
       },
       colors: {
