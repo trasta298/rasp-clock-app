@@ -27,7 +27,7 @@
 docker compose up -d
 
 # ブラウザで確認
-# http://localhost:8080
+# http://localhost:3000
 ```
 
 コンテナの管理:
@@ -103,7 +103,7 @@ npm run preview
 docker compose up -d
 
 # Chromium kioskモードで開く
-chromium-browser --kiosk --app=http://localhost:8080
+chromium-browser --kiosk --app=http://localhost:3000
 ```
 
 ### 方法2: コマンドラインから起動（開発用）
@@ -180,7 +180,7 @@ nano ~/.config/autostart/clock.desktop
 [Desktop Entry]
 Type=Application
 Name=RaspberryPi Clock
-Exec=chromium-browser --kiosk --app=http://localhost:8080
+Exec=chromium-browser --kiosk --app=http://localhost:3000
 X-GNOME-Autostart-enabled=true
 ```
 
@@ -283,7 +283,7 @@ colors: {
 
 ```yaml
 ports:
-  - "8080:80"  # 左側を任意のポートに変更
+  - "3000:80"  # 左側を任意のポートに変更
 ```
 
 ### タイムゾーンの変更
@@ -326,8 +326,8 @@ docker compose up -d
 #### ポートが使用中の場合
 
 ```bash
-# ポート8080を使用しているプロセスを確認
-sudo lsof -i :8080
+# ポート3000を使用しているプロセスを確認
+sudo lsof -i :3000
 
 # または docker-compose.yml のポート番号を変更
 ```
@@ -350,7 +350,7 @@ sudo lsof -i :8080
 
 ```bash
 # Docker環境のヘルスチェック
-curl http://localhost:8080/health
+curl http://localhost:3000/health
 
 # コンテナのヘルス状態を確認
 docker inspect --format='{{.State.Health.Status}}' rasp-clock
